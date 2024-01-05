@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica1_SAEG.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="App para probar etiquetas" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+        </Frame>
+        <Frame>
+            <StackLayout>
+                <Grid Margin="10,15">
+                    <Label Text="BoxView: "
+                           Grid.Column="0"
+                           Grid.Row="0"
+                           TextColor="Black"
+                           FontAttributes="Bold"/>
+                    <BoxView Color="#45F"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             HorizontalOptions="Center"
+                             Grid.Column="1"
+                             Grid.Row="0"
+                             Margin="5"/>
+                    <Label Text="Elipse: "
+                           Grid.Column="0"
+                           Grid.Row="1"
+                           TextColor="Black"
+                           FontAttributes="Bold"/>
+                    <Ellipse Fill="Red"
+                             WidthRequest="150"
+                             HeightRequest="50"
+                             HorizontalOptions="Center"
+                             Grid.Column="1"
+                             Grid.Row="1"
+                             Margin="10,20"/>
+                    <Label Text="Imagen: "
+                           Grid.Column="0"
+                           Grid.Row="2"
+                           TextColor="Black"
+                           FontAttributes="Bold"/>
+                    <Image Source="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+                           HeightRequest="20"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           />
+                    <Label Text="Label: "
+                           Grid.Column="0"
+                           Grid.Row="3"
+                           TextColor="Black"
+                           FontAttributes="Bold"/>
+                    <Label Text="Hola soy un label jaja"
+                           Grid.Column="1"
+                           Grid.Row="3"
+                           TextColor="#512"
+                           FontAttributes="Bold"/>
+                    <Label Text="Línea: "
+                           Grid.Column="0"
+                           Grid.Row="4"
+                           TextColor="Black"
+                           FontAttributes="Bold"/>
+                    <Line X1="120"
+                          Y1="0"
+                          X2="0"
+                          Y2="120"
+                          Stroke="#521"
+                          Grid.Column="1"
+                          Grid.Row="4"/>
+                    <Label Text="Asignacion: "
+                           Grid.Column="0"
+                           Grid.Row="5"
+                           FontAttributes="Bold"
+                           TextColor="#000"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
