@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica1_SAEG.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="18" CornerRadius="0">
+            <Label Text="App para probar etiquetas" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"
+                   FontAttributes="Bold"/>
+        </Frame>
+        <Frame>
+            <StackLayout>
+                <Button Text="Etiquetas de formas:"
+                            TextColor="#FFF"
+                            BackgroundColor="#FF44FF"
+                            CornerRadius="20"
+                            Command="{Binding CambioDeVentanaCommand}"
+                                />
+                <Button Text="Etiquetas para interacción del usuario:"
+                        TextColor="#FFF"
+                        BackgroundColor="#FF44FF"
+                        CornerRadius="20"
+                        Command="{Binding IrAVistaEtiquetasDeInteaccionCommand}"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

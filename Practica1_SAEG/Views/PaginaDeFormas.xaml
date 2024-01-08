@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica1_SAEG.PaginaDeFormas"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FFF">
+            <Button Text="Volver" Command="{Binding RegresarAPaginaAnteriorCommand}"/>
+            <Grid>
+                <Frame Grid.Column="0">
+                    <StackLayout VerticalOptions="Fill"
+                                 HorizontalOptions="Center"
+                                 Padding="-40,30,0,40">
+                        <Label Text="BoxView: "
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               />
+                        <Label Text="Ellipse: "
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Padding="0,20,0,0"
+                               />
+                        <Label Text="Line: " 
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Padding="0,-5,0,10"
+                               />
+                        <Label Text="Path: " 
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               />
+                        <Label Text="Polygon: " 
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Padding="0,50,0,10"
+                               />
+                        <Label Text="Polyline: " 
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Padding="0,30,0,0"
+                               />
+                        <Label Text="Rectangle: " 
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Padding="0,20,0,0"
+                               />
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="1">
+                    <StackLayout VerticalOptions="Fill"
+                                 HorizontalOptions="Center"
+                                 Padding="0,20,-50,20">
+                        <BoxView Color="#45F"
+                                 WidthRequest="50"
+                                 HeightRequest="50"
+                                 HorizontalOptions="Center"
+                                 />
+                        <Ellipse Fill="Red"
+                                 WidthRequest="50"
+                                 HeightRequest="50"
+                                 HorizontalOptions="Center"
+                                 />
+                        <Line X1="50"
+                              Y1="0"
+                              X2="0"
+                              Y2="10"
+                              Stroke="Red"
+                              HorizontalOptions="Center"
+                              />
+                        <Path Stroke="Black"
+                              StrokeThickness="2"
+                              Fill="Blue"
+                              Aspect="Uniform"
+                              HeightRequest="50"
+                              WidthRequest="50"
+                              Data="M13.9,16.2
+                                    L32,16.2 32,31.9 13.9,30.1Z
+                                    M0,16.2
+                                    L11.9,16.2 11.9,29.9 0,28.6Z
+                                    M11.9,2
+                                    L11.9,14.2 0,14.2 0,3.3Z
+                                    M32,0
+                                    L32,14.2 13.9,14.2 13.9,1.8Z"
+                              />
+                        <Polygon Points="5 24, 5 72, 48 75, 50 0, 96 0, 96 48,
+                                         25 48, 24 96, 75 100 77 24"
+                                 Fill="Red"
+                                 Stroke="#444"
+                                 StrokeThickness="2"
+                                 HorizontalOptions="End"
+                                 />
+                        <Polyline Points="0,0 10,30, 15,0 18,60 23,30 35,30 40,0
+                                          43,60 48,30 100,30"
+                                  Stroke="Red"
+                                  HorizontalOptions="Center"
+                                  />
+                        <Rectangle Fill="#993399"
+                                   WidthRequest="50"
+                                   HeightRequest="12"
+                                   HorizontalOptions="Center"
+                                   Margin="20"
+                                   />
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

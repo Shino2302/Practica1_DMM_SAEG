@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica1_SAEG.Views.EtiquetasParaEstablecerValores"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FFF">
+            <Button Text="Volver" Command="{Binding RegresarAPaginaAnteriorCommand}"/>
+            <Grid>
+                <Frame Grid.Column="0">
+                    <StackLayout VerticalOptions="Fill"
+                 HorizontalOptions="Center"
+                 Padding="-40,30,0,40">
+                        <Label Text="Button: "
+               TextColor="Black"
+               FontAttributes="Bold"
+               />
+                        <Label Text="ImageButton: "
+               TextColor="Black"
+               FontAttributes="Bold"
+               Padding="0,70,0,0"
+               />
+                        <Label Text="RadioButton: " 
+               TextColor="Black"
+               FontAttributes="Bold"
+               Padding="0,5,0,10"
+               />
+                        <Label Text="RefreshView: " 
+               TextColor="Black"
+               FontAttributes="Bold"
+               />
+                        <Label Text="SearchBar: " 
+               TextColor="Black"
+               FontAttributes="Bold"
+               Padding="0,50,0,10"
+               />
+                        <Label Text="SwipeView: " 
+               TextColor="Black"
+               FontAttributes="Bold"
+               Padding="0,30,0,0"
+               />
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="1">
+                    <StackLayout VerticalOptions="Fill"
+                 HorizontalOptions="Center"
+                 Padding="0,20,-50,20">
+                        <Button Text="Hola"
+                        Font="12"
+                        BackgroundColor="#357"
+                        TextColor="White"
+                        HeightRequest="50"
+                        />
+                        <ImageButton Source="https://i.ibb.co/pyt3vdr/Angular-full-color-logo-svg.png"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             HeightRequest="100"
+                             WidthRequest="100"
+                             />
+                        <RadioButton Content="Hola"
+                             TextColor="Black"
+                             IsChecked="False"
+                             />
+                        <RefreshView IsRefreshing="False"
+                             RefreshColor="Black"
+                             />
+                        <SearchBar Placeholder="Busqueda"
+                           PlaceholderColor="#333"
+                           FontSize="14"
+                           TextColor="Black"
+                           />
+                        <SwipeView>
+                            <SwipeView.LeftItems>
+                                <SwipeItem Text="Borrar"
+                                   IconImageSource="https://i.ibb.co/pyt3vdr/Angular-full-color-logo-svg.png"
+                                   BackgroundColor="LightPink" 
+                                   />
+                            </SwipeView.LeftItems>
+                        </SwipeView>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
